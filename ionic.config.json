@@ -1,0 +1,7 @@
+{
+  "name": "otpvarify",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
