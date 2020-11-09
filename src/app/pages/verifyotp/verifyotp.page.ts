@@ -34,7 +34,8 @@ export class VerifyotpPage implements OnInit {
     this.windowRef.confirmationResult
       .confirm(`${this.OTPcode}`)
       .then((result) => {
-        this.router.navigate(["/user"]);
+        localStorage.setItem("user", result.user);
+        this.router.navigate(["/user/timeline"]);
         console.log("done", result);
       })
       .catch((error) => {

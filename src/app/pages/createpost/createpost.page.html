@@ -8,5 +8,22 @@
 </ion-header>
 
 <ion-content>
-  
+  <ion-button expand="full">
+    <ion-icon lazy="true" slot="start" name="image"></ion-icon>
+    <ion-label slot="end">Upload Image</ion-label>
+    <input
+      type="file"
+      (change)="loadImageFromDevice($event)"
+      id="file-input"
+      accept="image/png, image/jpeg"
+    />
+  </ion-button>
+  <!-- <form>
+    <ion-button expend="block" style="width: 45%" color="light"
+      >Select Image</ion-button
+    >
+    <ion-button expend="block" style="width: 45%" color="light"
+      >Write Text</ion-button
+    >
+  </form> -->
 </ion-content>
