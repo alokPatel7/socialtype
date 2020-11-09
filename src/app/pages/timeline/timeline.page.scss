@@ -1,0 +1,42 @@
+ion-content {
+  ion-header {
+    margin-top: 10px;
+    ion-item {
+      border: none;
+      img {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      ion-label {
+        padding-left: 10px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+.displaypostcard {
+  ion-card {
+    ion-card-subtitle {
+      display: flex;
+      ion-label {
+        font-size: 17px;
+        padding: 10px;
+      }
+    }
+  }
+}
+.displaypostcard {
+  ion-card-content {
+    ion-item {
+      img {
+        width: 100%;
+      }
+     
+    }
+  }
+}

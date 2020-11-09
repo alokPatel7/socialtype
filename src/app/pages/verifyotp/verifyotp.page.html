@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Verify OTP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #form="ngForm" (ngSubmit)="sendlogincode()">
+    <ion-list>
+      <ion-list><img src="../../../assets/icon/favicon.png" alt="" /></ion-list>
+      <ion-input
+        type="number"
+        [(ngModel)]="OTPcode"
+        name="OTPcode"
+        placeholder="Enter 6 digit OTP"
+      ></ion-input>
+      <ion-label *ngIf="message">{{message}}</ion-label>
+      <ion-button expand="block" (click)="VerifyOTP()">Verify OTP</ion-button>
+      <a routerLink="/landing/signup"
+        ><ion-button expand="block">Back</ion-button></a
+      >
+    </ion-list>
+  </form>
+</ion-content>
